@@ -1,0 +1,82 @@
+@import url("./style.css");
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    -o-animation: ;
+}
+
+.roulette {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 5px solid #333;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wheel::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.wheel::after {
+    content: "¡GIRAR!";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+    pointer-events: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+body {
+    background-image: url("./images/OIP.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+body, h1, h2, h4, p {
+    color: var(--color-primary-texto)
+}
+
+.fuenteh1 {
+    color: var(--color-primary-texto);
+}
+
+.fuenteh2 {
+    color: var(--color-primary-texto)
+}
+
+.fuentep {
+    color: var(--color-primary-texto)
+}
+#Ruleta1, #Ruleta2, #Ruleta3 {
+    color: aquamarine;
+}
+.pagos.c {
+    background-image: url(R.jpg);
+}
+.body, h1, h2, h4, p {
+    color: var(--color-primary-texto)
+}
